@@ -1,28 +1,39 @@
-// script.js
-let totalAmount = 0;
-let orderList = [];
+let order = [];
 
-function addToOrder(item, price) {
-    totalAmount += price;
-    orderList.push(item);
-    document.getElementById("total-amount").innerText = totalAmount;
-    updateOrderList();
+function addToOrder(itemName, itemPrice) {
+    order.push({ name: itemName, price: itemPrice });
+    updateOrder();
 }
 
-function updateOrderList() {
-    const orderListContainer = document.getElementById("order-list");
-    orderListContainer.innerHTML = "";
-    orderList.forEach(item => {
-        const listItem = document.createElement("p");
-        listItem.textContent = item;
-        orderListContainer.appendChild(listItem);
+function removeFromOrder(itemName, itemPrice) {
+    const index = order.findIndex(item => item.name === itemName && item.price === itemPrice);
+    if (index !== -1) {
+        order.splice(index, 1);
+    }
+    updateOrder();
+}
+
+function updateOrder() {
+    const orderList = document.getElementById('order-list');
+    const totalAmount = document.getElementById('total-amount');
+    orderList.innerHTML = '';
+
+    let total = 0;
+    order.forEach(item => {
+        orderList.innerHTML += `<p>${item.name} - ₹${item.price}</p>`;
+        total += item.price;
     });
+
+    totalAmount.textContent = total;
 }
 
-document.getElementById("checkout-btn").addEventListener("click", function() {
-    alert("Your order total is ₹" + totalAmount + ". Thank you for ordering!");
-    totalAmount = 0;
-    orderList = [];
-    document.getElementById("total-amount").innerText = totalAmount;
-    updateOrderList();
-});
+function checkout() {
+    if (order.length === 0) {
+        alert('Your order is empty!');
+    } else {
+        alert('Thank you for your order!');
+        order = [];
+        updateOrder();
+    }
+}
+
