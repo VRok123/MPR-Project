@@ -10,157 +10,288 @@
     <div class="container">
         <header>
             <h1>Restaurant Menu</h1>
-            <p>Select items to add to your order</p>
+            <p>Explore a variety of dishes from around the world!</p>
         </header>
 
-        <!-- Menu Section -->
-        <section class="menu">
-
-            <!-- Italian Cuisine -->
-            <h2>Italian Cuisine</h2>
-            <div class="menu-item">
-                <h3>Spaghetti Carbonara</h3>
-                <span class="price">₹240</span>
-                <button class="add-btn" onclick="addToOrder('Spaghetti Carbonara', 240)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Spaghetti Carbonara', 240)">Remove</button>
-            </div>
-            <div class="menu-item">
-                <h3>Lasagna</h3>
-                <span class="price">₹250</span>
-                <button class="add-btn" onclick="addToOrder('Lasagna', 250)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Lasagna', 250)">Remove</button>
-            </div>
-            <div class="menu-item">
-                <h3>Margherita Pizza</h3>
-                <span class="price">₹300</span>
-                <button class="add-btn" onclick="addToOrder('Margherita Pizza', 300)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Margherita Pizza', 300)">Remove</button>
-            </div>
-            <div class="menu-item">
-                <h3>Pasta Alfredo</h3>
-                <span class="price">₹220</span>
-                <button class="add-btn" onclick="addToOrder('Pasta Alfredo', 220)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Pasta Alfredo', 220)">Remove</button>
-            </div>
-
-            <!-- Indian Cuisine -->
+        <!-- Indian Cuisine -->
+        <div class="menu">
             <h2>Indian Cuisine</h2>
+            <!-- Add more items here -->
             <div class="menu-item">
-                <h3>Butter Chicken</h3>
-                <span class="price">₹350</span>
-                <button class="add-btn" onclick="addToOrder('Butter Chicken', 350)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Butter Chicken', 350)">Remove</button>
+                <div class="menu-img">
+                    <img src="butterchicken.jpg" alt="Butter Chicken">
+                </div>
+                <div>
+                    <h3>Butter Chicken</h3>
+                    <p>A rich and creamy curry with tender chicken pieces.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹250</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Paneer Tikka</h3>
-                <span class="price">₹200</span>
-                <button class="add-btn" onclick="addToOrder('Paneer Tikka', 200)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Paneer Tikka', 200)">Remove</button>
+                <div class="menu-img">
+                    <img src="paneertikka.jpg" alt="Paneer Tikka">
+                </div>
+                <div>
+                    <h3>Paneer Tikka</h3>
+                    <p>Grilled paneer cubes marinated in spices.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹200</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Chole Bhature</h3>
-                <span class="price">₹150</span>
-                <button class="add-btn" onclick="addToOrder('Chole Bhature', 150)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Chole Bhature', 150)">Remove</button>
+                <div class="menu-img">
+                    <img src="chole-bhature.jpg" alt="Chole Bhature">
+                </div>
+                <div>
+                    <h3>Chole Bhature</h3>
+                    <p>Spicy chickpea curry served with deep-fried bread.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹220</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Biryani</h3>
-                <span class="price">₹300</span>
-                <button class="add-btn" onclick="addToOrder('Biryani', 300)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Biryani', 300)">Remove</button>
+                <div class="menu-img">
+                    <img src="dosa.jpg" alt="Dosa">
+                </div>
+                <div>
+                    <h3>Dosa</h3>
+                    <p>Crispy rice crepes served with sambar and chutney.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹150</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
+            <!-- Add more Indian menu items here -->
+        </div>
 
-            <!-- Mexican Cuisine -->
+        <!-- Italian Cuisine -->
+        <div class="menu">
+            <h2>Italian Cuisine</h2>
+            <!-- Add more items here -->
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="margerita.jpeg" alt="Margherita Pizza">
+                </div>
+                <div>
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza with fresh tomatoes, mozzarella, and basil.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹300</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="spaghetti.jpg" alt="Spaghetti Carbonara">
+                </div>
+                <div>
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Creamy pasta with pancetta and Parmesan cheese.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹350</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="lasagna.jpg" alt="Lasagna">
+                </div>
+                <div>
+                    <h3>Lasagna</h3>
+                    <p>Layers of pasta with meat sauce and cheese.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹400</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="gnocchi.jpg" alt="Gnocchi">
+                </div>
+                <div>
+                    <h3>Gnocchi</h3>
+                    <p>Soft potato dumplings served with a tomato sauce.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹350</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <!-- Add more Italian menu items here -->
+        </div>
+
+        <!-- Mexican Cuisine -->
+        <div class="menu">
             <h2>Mexican Cuisine</h2>
+            <!-- Add more items here -->
             <div class="menu-item">
-                <h3>Tacos</h3>
-                <span class="price">₹150</span>
-                <button class="add-btn" onclick="addToOrder('Tacos', 150)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Tacos', 150)">Remove</button>
+                <div class="menu-img">
+                    <img src="tacos.jpg" alt="Tacos">
+                </div>
+                <div>
+                    <h3>Tacos</h3>
+                    <p>Soft tortillas filled with meat, cheese, and veggies.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹150</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Burritos</h3>
-                <span class="price">₹180</span>
-                <button class="add-btn" onclick="addToOrder('Burritos', 180)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Burritos', 180)">Remove</button>
+                <div class="menu-img">
+                    <img src="quesadilla.jpg" alt="Quesadilla">
+                </div>
+                <div>
+                    <h3>Quesadilla</h3>
+                    <p>Grilled tortilla filled with cheese and vegetables.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹180</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Quesadilla</h3>
-                <span class="price">₹200</span>
-                <button class="add-btn" onclick="addToOrder('Quesadilla', 200)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Quesadilla', 200)">Remove</button>
+                <div class="menu-img">
+                    <img src="burritos.jpg" alt="Burritos">
+                </div>
+                <div>
+                    <h3>Burritos</h3>
+                    <p>Flour tortillas wrapped around a filling of beans, rice, and meat.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹200</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Nachos</h3>
-                <span class="price">₹120</span>
-                <button class="add-btn" onclick="addToOrder('Nachos', 120)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Nachos', 120)">Remove</button>
+                <div class="menu-img">
+                    <img src="churros.jpg" alt="Churros">
+                </div>
+                <div>
+                    <h3>Churros</h3>
+                    <p>Deep-fried dough pastries rolled in cinnamon sugar.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹120</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
+            <!-- Add more Mexican menu items here -->
+        </div>
 
-            <!-- Chinese Cuisine -->
+        <!-- Chinese Cuisine -->
+        <div class="menu">
             <h2>Chinese Cuisine</h2>
+            <!-- Add more items here -->
             <div class="menu-item">
-                <h3>Spring Rolls</h3>
-                <span class="price">₹150</span>
-                <button class="add-btn" onclick="addToOrder('Spring Rolls', 150)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Spring Rolls', 150)">Remove</button>
+                <div class="menu-img">
+                    <img src="frice.jpg" alt="Fried Rice">
+                </div>
+                <div>
+                    <h3>Fried Rice</h3>
+                    <p>Stir-fried rice with vegetables and soy sauce.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹180</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Fried Rice</h3>
-                <span class="price">₹180</span>
-                <button class="add-btn" onclick="addToOrder('Fried Rice', 180)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Fried Rice', 180)">Remove</button>
+                <div class="menu-img">
+                    <img src="dumplings.jpg" alt="Dumplings">
+                </div>
+                <div>
+                    <h3>Dumplings</h3>
+                    <p>Steamed dumplings filled with pork and vegetables.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹220</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Chow Mein</h3>
-                <span class="price">₹170</span>
-                <button class="add-btn" onclick="addToOrder('Chow Mein', 170)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Chow Mein', 170)">Remove</button>
+                <div class="menu-img">
+                    <img src="sweet.jpg" alt="Sweet and Sour Chicken">
+                </div>
+                <div>
+                    <h3>Sweet and Sour Chicken</h3>
+                    <p>Crispy chicken in a tangy and sweet sauce.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹250</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
             <div class="menu-item">
-                <h3>Manchurian</h3>
-                <span class="price">₹200</span>
-                <button class="add-btn" onclick="addToOrder('Manchurian', 200)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Manchurian', 200)">Remove</button>
+                <div class="menu-img">
+                    <img src="lomein.jpg" alt="Lo Mein">
+                </div>
+                <div>
+                    <h3>Lo Mein</h3>
+                    <p>Noodles stir-fried with vegetables and your choice of meat.</p>
+                </div>
+                <div class="menu-controls">
+                    <span class="price">₹200</span>
+                    <span class="item-counter">0</span>
+                    <button class="add-btn">Add</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
             </div>
+            <!-- Add more Chinese menu items here -->
+        </div>
 
-            <!-- American Cuisine -->
-            <h2>American Cuisine</h2>
-            <div class="menu-item">
-                <h3>Burger</h3>
-                <span class="price">₹120</span>
-                <button class="add-btn" onclick="addToOrder('Burger', 120)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Burger', 120)">Remove</button>
-            </div>
-            <div class="menu-item">
-                <h3>Hot Dog</h3>
-                <span class="price">₹130</span>
-                <button class="add-btn" onclick="addToOrder('Hot Dog', 130)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Hot Dog', 130)">Remove</button>
-            </div>
-            <div class="menu-item">
-                <h3>BBQ Ribs</h3>
-                <span class="price">₹350</span>
-                <button class="add-btn" onclick="addToOrder('BBQ Ribs', 350)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('BBQ Ribs', 350)">Remove</button>
-            </div>
-            <div class="menu-item">
-                <h3>Apple Pie</h3>
-                <span class="price">₹400</span>
-                <button class="add-btn" onclick="addToOrder('Apple Pie', 400)">Add to Order</button>
-                <button class="remove-btn" onclick="removeFromOrder('Apple Pie', 400)">Remove</button>
-            </div>
-
-        </section>
-
-        <!-- Order Summary -->
-        <footer>
-            <h2>Your Order</h2>
+        <div id="order-summary">
+            <h2>Order Summary</h2>
             <div id="order-list"></div>
-            <h3>Total: ₹<span id="total-amount">0</span></h3>
-            <button id="checkout-btn" onclick="checkout()">Checkout</button>
-        </footer>
+            <div id="total-amount">Total: ₹0</div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
     </div>
+
+    <footer>
+        <h2>Thank you for visiting</h2>
+    </footer>
 
     <script src="Menu.js"></script>
 </body>
