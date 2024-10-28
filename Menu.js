@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutButton = document.getElementById('checkout-btn');
     const orderList = document.getElementById('order-list');
     const totalAmountElement = document.getElementById('total-amount');
+    const tableNumberInput = document.getElementById('table-number'); // Select the table number input field
     let totalAmount = 0;
 
     addButtons.forEach(button => {
@@ -47,20 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutButton.addEventListener('click', () => {
-        const orderItems = Array.from(orderList.querySelectorAll('.order-item'))
-            .map(item => {
-                const name = item.querySelector('.order-item-name').textContent;
-                const count = item.querySelector('.order-item-count').textContent;
-                return `${name} x ${count}`; // Changed to display 'x' instead of '₹'
-            })
-            .join('\n');
-        
+        const tableNumber = tableNumberInput.value.trim(); // Get table number
+
+        if (!tableNumber) {
+            alert('Please enter your table number.');
+            return;
+        }
+
         if (totalAmount === 0) {
             alert('Your cart is empty. Please add items before checking out.');
             return;
         }
 
-        alert(`Order Summary:\n${orderItems}\nTotal Amount: ₹${totalAmount}\nThank you for your order!`);
+        const orderItems = Array.from(orderList.querySelectorAll('.order-item'))
+            .map(item => {
+                const name = item.querySelector('.order-item-name').textContent;
+                const count = item.querySelector('.order-item-count').textContent;
+                return `${name} x ${count}`;
+            })
+            .join('\n');
+        
+        alert(`Order Summary:\nTable Number: ${tableNumber}\n${orderItems}\nTotal Amount: ₹${totalAmount}\nThank you for your order!`);
+        
         clearOrder();
     });
 
@@ -102,10 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
         totalAmount = 0;
         updateTotalAmount();
 
-        // Reset item counters
+        // Reset item counters and table number
         document.querySelectorAll('.item-counter').forEach(counter => {
             counter.textContent = '0';
         });
+        tableNumberInput.value = ''; // Reset table number field
     }
 });
-
