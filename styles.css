@@ -151,6 +151,22 @@ header p {
     margin-bottom: 20px;
 }
 
+#table-number {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#table-number:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 5px #28a745;
+}
+
 #checkout-btn {
     background-color: #5cb85c;
     color: #fff;
@@ -165,6 +181,7 @@ header p {
 #checkout-btn:hover {
     background-color: #4cae4c;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
